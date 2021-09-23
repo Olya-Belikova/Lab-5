@@ -1,0 +1,151 @@
+Задание 1:
+using System;
+
+namespace Lab_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int result = 0;
+            Console.WriteLine("Введите x1:  ");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y1: ");
+            int y1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите x2: ");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y2: ");
+            int y2 = int.Parse(Console.ReadLine());
+            result = (int)Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y2, 2));
+            Console.WriteLine("result = " + result);
+        }
+    }
+}
+
+Задание 2:
+using System;
+
+namespace Lab5._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int result = 0;
+            int ac = 0;
+            int bc = 0;
+            Console.WriteLine("Введите A:  ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите B: ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите C: ");
+            int c = int.Parse(Console.ReadLine());
+            ac = c - a;
+            bc = c - b;
+            result = ac + bc;
+            Console.WriteLine("ac + bc = " + result);
+        }
+    }
+}
+
+Задание 3:
+using System;
+
+namespace Lab_5._3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sum = 0;
+            double ab = 0;
+            double ac = 0;
+            double bc = 0;
+            Console.WriteLine("Введите значение A: ");
+            double a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите значение B: ");
+            double b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите значение C: ");
+            double c = int.Parse(Console.ReadLine());
+            ab = b - a;
+
+            if (c < ab)
+            {
+                ac = c - a;
+                bc = c - b;
+                sum = ac + bc;
+                Console.WriteLine("ac + ab = " + sum);
+            }
+            else if (c > ab)
+            {
+                Console.WriteLine("Значение С > AB решения нет");
+            }
+        }
+    }
+}
+
+Задание 4:
+using System;
+
+namespace Lab5._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите x1:  ");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y1: ");
+            int y1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите x2: ");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y2: ");
+            int y2 = int.Parse(Console.ReadLine());
+            int a = Math.Abs(x2 - x1);
+            int b = Math.Abs(y2 - y1);
+            int p = (a + b) / 2;
+            int s = a * b;
+            Console.WriteLine("P = " + p);
+            Console.WriteLine("S = " + s);
+        }
+    }
+}
+
+Задание 5:
+using System;
+
+namespace Lab5._5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ввод координат (переменных) с клавиатары
+            Console.WriteLine("Введите x1:  ");
+            int x1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y1: ");
+            int y1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите x2: ");
+            int x2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y2: ");
+            int y2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите x3: ");
+            int x3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите y3: ");
+            int y3 = int.Parse(Console.ReadLine());
+            // Нахождение длин нрямых 
+            double a = Math.Sqrt(Math.Pow(x2 - x1,2) + Math.Pow(y2 - y1,2));
+            double b = Math.Sqrt(Math.Pow(x3 - x2, 2) + Math.Pow(y3 - y2, 2));
+            double c = Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2));
+            // Нахождение периметра и полупериметра
+            int p1 = (int)(a + b + c);
+            int p2 = p1 / 2;
+            // Нахождение площади
+            double s = (int)Math.Sqrt(p2 * (p2 - a) * (p2 - b) * (p2 - c));
+            Console.WriteLine("Р = " + p1);
+            Console.WriteLine("S = " + s);
+        }
+    }
+}
+
+
