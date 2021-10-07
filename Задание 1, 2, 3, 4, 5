@@ -7,16 +7,16 @@ namespace Lab_5
     {
         static void Main(string[] args)
         {
-            int result = 0;
+            double result;
             Console.WriteLine("Введите x1:  ");
-            int x1 = int.Parse(Console.ReadLine());
+            double x1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите y1: ");
-            int y1 = int.Parse(Console.ReadLine());
+            double y1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите x2: ");
-            int x2 = int.Parse(Console.ReadLine());
+            double x2 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите y2: ");
-            int y2 = int.Parse(Console.ReadLine());
-            result = (int)Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y2, 2));
+            double y2 = int.Parse(Console.ReadLine());
+            result = (int)Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             Console.WriteLine("result = " + result);
         }
     }
