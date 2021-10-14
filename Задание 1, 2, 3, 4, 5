@@ -120,6 +120,11 @@ namespace Lab5._5
     {
         static void Main(string[] args)
         {
+            double a;
+            double b;
+            double c;
+            double p1;
+            double p1;
             //Ввод координат (переменных) с клавиатары
             Console.WriteLine("Введите x1:  ");
             int x1 = int.Parse(Console.ReadLine());
@@ -134,14 +139,14 @@ namespace Lab5._5
             Console.WriteLine("Введите y3: ");
             int y3 = int.Parse(Console.ReadLine());
             // Нахождение длин нрямых 
-            double a = Math.Sqrt(Math.Pow(x2 - x1,2) + Math.Pow(y2 - y1,2));
-            double b = Math.Sqrt(Math.Pow(x3 - x2, 2) + Math.Pow(y3 - y2, 2));
-            double c = Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2));
+            a = Math.Sqrt(Math.Pow(x2 - x1,2) + Math.Pow(y2 - y1,2));
+            b = Math.Sqrt(Math.Pow(x3 - x2, 2) + Math.Pow(y3 - y2, 2));
+            c = Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2));
             // Нахождение периметра и полупериметра
-            int p1 = (int)(a + b + c);
-            int p2 = p1 / 2;
+            p1 = a + b + c;
+            p2 = p1 / 2;
             // Нахождение площади
-            double s = (int)Math.Sqrt(p2 * (p2 - a) * (p2 - b) * (p2 - c));
+            double s = Math.Sqrt(p2 * (p2 - a) * (p2 - b) * (p2 - c));
             Console.WriteLine("Р = " + p1);
             Console.WriteLine("S = " + s);
         }
